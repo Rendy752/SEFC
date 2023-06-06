@@ -1,0 +1,36 @@
+.wrapper{
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav{
+    display: flex;
+}
+
+.nav_item{
+    border: 1px solid black;
+}
+
+.logo{
+    height: 2em;
+    padding: 5px;
+}
+
+.gambar{
+    width: 200px;
+    height: 200px;
+    display: none;
+}
+@media only screen and (max-width: 600px){
+    .wrapper{
+        flex-direction: column;
+    }
+
+    .nav{
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+}

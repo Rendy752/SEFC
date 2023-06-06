@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile</title>
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+    <header class="wrapper">
+        <img src="img/logo.png" alt="hm" class="logo">
+        <div class="nav">
+            <button class="nav_item">Home</button>
+            <button class="nav_item">Our Profile</button>
+            <button class="nav_item">Portofolio</button>
+            <button class="nav_item">Message Us</button>
+        </div>
+    </header>
+    <div id="hero" class="hero">
+        <img src="" alt="hero_image">
+        <h1>Hi <span id="nama">Rendy</span>, Welcome To Website!</h1>
+        <img src="img/logo.png" alt="hm" class="gambar">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEGoWVW_9a3K2onykmNjJWrCNFl4Nh591WSQ&usqp=CAU" class="gambar">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrSiXgCMAZBg3iP_E8OjAAUmJ9-BXS88xKYg&usqp=CAU" class="gambar">
+        <button onclick="slide(-1)">Previous</button>
+        <button onclick="slide(1)">Next</button>
+        <p>Ini adalah website latihan pertama</p>
+    </div>
+    <div id="headquarter">
+        <div class="headquarter_image"></div>
+        <div class="headquarter_image"></div>
+        <div class="headquarter_image"></div>
+    </div>
+    <div id="message_us" class="message_us">
+        <h1>Message Us</h1>
+        <form name="form" onsubmit="return validateForm()">
+            <table>
+                <tr>
+                    <td>Nama</td>
+                    <td>:</td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td>Tanggal Lahir</td>
+                    <td>:</td>
+                    <td><input type="date" name="birth_date"></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>:</td>
+                    <td>
+                        <input type="radio" name="gender" value="Laki_laki">Laki-laki
+                        <input type="radio" name="gender" value="Perempuan">Perempuan
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pesan</td>
+                    <td>:</td>
+                    <td><textarea name="message"></textarea></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Submit"></td>
+                </tr>
+            </table>
+        </form>
+
+        <table>
+            <tr>
+                <td>Nama</td>
+                <td>=</td>
+                <td id="show_name"></td>
+            </tr>
+            <tr>
+                <td>Tanggal Lahir</td>
+                <td>=</td>
+                <td id="show_birth_date"></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>=</td>
+                <td id="show_gender"></td>
+            </tr>
+            <tr>
+                <td>Pesan</td>
+                <td>=</td>
+                <td id="show_message"></td>
+            </tr>
+        </table>
+    </div>
+    <footer>Created by Rendy</footer>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
