@@ -1,5 +1,11 @@
 var name=prompt("Masukkan nama kamu");
-document.getElementById("nama").innerText=name;
+if(name==""){
+    document.getElementById("nama").innerText="Anonymous";
+}
+else{
+    document.getElementById("nama").innerText=name;
+}
+
 
 function validateForm(){
     var name=document.forms["form"]["name"].value;
