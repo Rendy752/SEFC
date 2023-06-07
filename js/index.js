@@ -2,24 +2,21 @@ var name=prompt("Masukkan nama kamu");
 document.getElementById("nama").innerText=name;
 
 function validateForm(){
-    var name = document.forms["form"]["name"].value;
+    var name=document.forms["form"]["name"].value;
     var date=document.forms["form"]["birth_date"].value;
     var gender=document.forms["form"]["gender"].value;
     var message=document.forms["form"]["message"].value;
-    console.log({name,date,gender,message});
-    console.log("Hello");
 
     if(name==''||date==''||gender==''||message==''){
         alert('Input tidak boleh kosong');
         return false; 
-
     }
 
     document.getElementById("show_name").innerText=name;
     document.getElementById("show_birth_date").innerText=date;
     document.getElementById("show_gender").innerText=gender;
     document.getElementById("show_message").innerText=message;
-    document.getElementById("show_current_time").innerText=date.now();
+    document.getElementById("show_current_time").innerText=new Date();
     return false;
 }
 
