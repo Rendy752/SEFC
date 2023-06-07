@@ -4,15 +4,23 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5rem 1rem 5rem;
+    background: linear-gradient(to right, red 0%, yellow 100%);
 }
 
 .nav{
     display: flex;
+    box-shadow: 5px 5px 10px black;
 }
 
 .nav_item{
     padding: 1rem 3rem 1rem 3rem;
     border: 1px solid black;
+    font-size: 1rem;
+}
+
+.nav_item:hover,#submit:hover{
+    background-color: aliceblue;
+    cursor: pointer;
 }
 
 .nav_item:first-child{
@@ -26,13 +34,23 @@
 }
 
 .hero{
-    border: 1px solid black;
     padding: 2rem 5rem 2rem 5rem;
+    background-color: grey;
+    color: white;
 }
 
 .logo{
     height: 2em;
     padding: 5px;
+    border-radius: 50%;
+}
+
+.group_picture{
+    display: flex;
+}
+
+.group_picture>button:hover{
+    background-color: aliceblue;
 }
 
 .gambar{
@@ -49,6 +67,7 @@
 .group_headquarter{
     display: flex;
     gap: 2rem;
+    margin-top: 2rem;
 }
 
 .hq{
@@ -61,11 +80,18 @@
     height: 200px;
     border-radius: 50%;
     border: 2px solid black;
+    transition: all 0.3s;
+}
+
+.headquarter_image:hover{
+    width: 220px;
+    height: 220px;
 }
 
 #message_us{
-    border: 1px solid black;
     padding: 2rem 5rem 2rem 5rem;
+    background-color: grey;
+    color: white;
 }
 
 .form{
@@ -84,10 +110,18 @@
 
 .display_form{
     width: 50%;
-    border:2px solid black;
+    padding: 1rem;
     margin-top:1rem;
     margin-bottom: 1rem;
     font-weight: bold;
+    
+}
+
+.show_table{
+    border:2px solid black;
+    border-radius: 3px;
+    color: black;
+    background-color: white;
 }
 
 input:not(.gender){
@@ -97,10 +131,6 @@ input:not(.gender){
 
 #submit{
     width: 100%;
-}
-
-.display_form{
-    padding: 1rem 0 1rem 0;
 }
 
 footer{
@@ -129,11 +159,35 @@ footer{
         align-items: center;
     }
 
+    .main_form, .show_table{
+        align-items: center;
+    }   
+}
+
+@media only screen and (max-width: 500px){
+    .gambar{
+        height: 150px;
+        width: 150px;
+    }
+
     .form{
+        gap: 2rem;
         flex-direction: column;
     }
 
-    .main_form, .show_table{
-        align-items: center;
+    .wrapper{
+        padding: 1rem;
+    }
+
+    #hero{
+        padding: 1rem;
+    }
+
+    #headquarter{
+        padding: 1rem;
+    }
+
+    #message_us{
+        padding: 1rem;
     }
 }
