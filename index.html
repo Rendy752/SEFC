@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Company Profile</title>
     <link rel="stylesheet" href="css/index.css">
-
+    <link rel="icon" href="img/logo.png">
 </head>
 
 <body>
@@ -21,35 +21,37 @@
         </div>
     </header>
     <div id="hero" class="hero">
-        <h2>Hi <span id="nama">Rendy</span>, Welcome To Website!</h2>
+        <h2>Hi <span id="nama">Rendy</span>, Welcome To Website!</h2><hr>
         <p>Ini adalah website latihan pertama</p>
-        <img src="img/logo.png" alt="hm" class="gambar">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEGoWVW_9a3K2onykmNjJWrCNFl4Nh591WSQ&usqp=CAU"
-            class="gambar">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrSiXgCMAZBg3iP_E8OjAAUmJ9-BXS88xKYg&usqp=CAU"
-            class="gambar">
-        <button onclick="slide(-1)">Previous</button>
-        <button onclick="slide(1)">Next</button>
+        <div class="group_picture">
+            <button onclick="slide(-1)"><</button>
+        <img src="img/picture1.png" alt="gambar1" class="gambar">
+        <img src="img/picture2.jpeg" alt="gambar2" class="gambar">
+        <img src="img/picture3.jpeg" alt="gambar3" class="gambar">
+        <button onclick="slide(1)">></button>
+        </div>
+        
+        
     </div>
     <div id="headquarter">
-        <h2>Our Headquarter</h2>
+        <h2>Our Headquarter</h2><hr>
         <div class="group_headquarter">
             <div class="hq">
-                <img src="img/hq1.jpeg" alt="hq1" class="headquarter_image">
+                <img title="Jakarta" src="img/hq1.jpeg" alt="hq1" class="headquarter_image">
                 <p>Jakarta</p>
             </div>
             <div class="hq">
-                <img src="img/hq2.jpeg" alt="hq2" class="headquarter_image">
+                <img title="Bandung" src="img/hq2.jpeg" alt="hq2" class="headquarter_image">
                 <p>Bandung</p>
             </div>
             <div class="hq">
-                <img src="img/hq3.jpeg" alt="hq3" class="headquarter_image">
+                <img title="Surabaya" src="img/hq3.jpeg" alt="hq3" class="headquarter_image">
                 <p>Surabaya</p>
             </div>
         </div>
     </div>
     <div id="message_us" class="message_us">
-        <h2>Message Us</h2>
+        <h2>Message Us</h2><hr>
         <div class="form">
             <div class="main_form">
                 <form name="form" onsubmit="return validateForm()" class="input_form">
