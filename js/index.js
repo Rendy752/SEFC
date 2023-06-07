@@ -19,6 +19,7 @@ function validateForm(){
     document.getElementById("show_birth_date").innerText=date;
     document.getElementById("show_gender").innerText=gender;
     document.getElementById("show_message").innerText=message;
+    document.getElementById("show_current_time").innerText=date.now();
     return false;
 }
 
@@ -39,5 +40,5 @@ function slide(index){
 
 
 setInterval(()=>{
-    plusDivs(1);
-},100000000)
+    slide(1);
+},10000)
