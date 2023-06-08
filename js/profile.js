@@ -1,8 +1,8 @@
 var number=0;
-function set(increment){
-    number+=increment;
+function set(){
+    number+=1;
     if(number%2!=0){
-        document.body.style.backgroundColor="#000000";
+        document.body.style.backgroundColor="#505050";
         document.body.style.color="#FFFFFF";
         document.getElementById("mode").src="img/darkmode.png";
     }

@@ -1,4 +1,4 @@
-var name=prompt("Masukkan nama kamu");
+var name=prompt("Input your name");
 if(name==""){
     document.getElementById("nama").innerText="Anonymous";
 }
@@ -14,16 +14,28 @@ function validateForm(){
     var message=document.forms["form"]["message"].value;
 
     if(name==''||date==''||gender==''||message==''){
-        alert('Input tidak boleh kosong');
+        alert("Input can't be empty");
         return false; 
     }
-
-    document.getElementById("show_name").innerText=name;
-    document.getElementById("show_birth_date").innerText=date;
-    document.getElementById("show_gender").innerText=gender;
-    document.getElementById("show_message").innerText=message;
-    document.getElementById("show_current_time").innerText=new Date();
-    return false;
+    else{
+        var confirm=prompt("Do you want us to display your information ? (yes/no)");
+        if(confirm=="no"){
+            alert("Okay");
+            return false;
+        }
+        else if(confirm=="yes"){
+            document.getElementById("show_name").innerText=name;
+            document.getElementById("show_birth_date").innerText=date;
+            document.getElementById("show_gender").innerText=gender;
+            document.getElementById("show_message").innerText=message;
+            document.getElementById("show_current_time").innerText=new Date();
+            return false;
+        }
+        else{
+            alert("Input doesn't valid");
+            return false;
+        } 
+    }
 }
 
 var slideIndex=1;

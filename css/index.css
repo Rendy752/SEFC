@@ -7,6 +7,10 @@
     background: linear-gradient(to right, red 0%, yellow 100%);
 }
 
+h2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
 .nav{
     display: flex;
     box-shadow: 5px 5px 10px black;
@@ -45,7 +49,8 @@ a{
 }
 
 .logo{
-    height: 2em;
+    height: 5rem;
+    width: 5rem;
     padding: 5px;
     border-radius: 50%;
 }
@@ -86,6 +91,7 @@ a{
     border-radius: 50%;
     border: 2px solid black;
     transition: all 0.3s;
+    box-shadow: 5px 5px 5px black;
 }
 
 .headquarter_image:hover{
@@ -127,6 +133,7 @@ a{
     border-radius: 3px;
     color: black;
     background-color: white;
+    box-shadow: 5px 5px 5px black;
 }
 
 input:not(.gender){
