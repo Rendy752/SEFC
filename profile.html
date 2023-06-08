@@ -14,21 +14,29 @@
     <header class="profile_nav">
         <img src="img/logo.png" alt="hm" class="logo">
         <div class="nav">
-            <button class="nav_item">Home</button>
-            <button class="nav_item">Our Profile</button>
-            <button class="nav_item">Portofolio</button>
-            <button class="nav_item">Message Us</button>
+            <button class="nav_item"><a onclick="set(1)"><img src="img/lightmode.png" id="mode"></a></button>
+            <button class="nav_item"><a href="#photo_banner">Home</a></button>
+            <button class="nav_item"><a href="#about">About</a></button>
+            <button class="nav_item"><a href="#vision_mission">Vision Mission</a></button>
+            <button class="nav_item"><a href="#more">More</a></button>
+            <button class="nav_item"><a href="#our_team">Team</a></button>
+            <button class="nav_item"><a href="#follow_us">Follow Us</a></button>
+            <button class="nav_item"><a href="#content">Content</a></button>
         </div>
     </header>
-    <div class="photo_banner">
+    <h2 id="tes"></h2>
+    <script>
+        document.getElementById("tes").innerText="Halo";
+    </script>
+    <div class="photo_banner" id="photo_banner">
         <h2>Photo Banner</h2>
         <img src="img/banner1.jpg" alt="banner" class="banner">
-        <img src="img/banner2.webp" alt="banner" class="banner">
-        <img src="img/banner3.webp" alt="banner" class="banner">
+        <img src="img/banner2.jpg" alt="banner" class="banner">
+        <img src="img/banner3.jpg" alt="banner" class="banner">
         <img src="img/banner4.jpg" alt="banner" class="banner">
         <img src="img/banner5.jpg" alt="banner" class="banner">
     </div>
-    <div class="about">
+    <div class="about" id="about">
         <h2>About the Company</h2>
         <p>We're a startup company located at palembang which focuses on delivering chicken
             seeds
@@ -38,7 +46,7 @@
             natural habitat in order to maximize their quality.
         </p>
     </div>
-    <div class="vision_mission">
+    <div class="vision_mission" id="vision_mission">
         <div class="vision">
             <h2>Vision</h2>
             <p>Our vision is to make our company the best chicken farming company in Palembang by providing good sevice
@@ -51,10 +59,28 @@
             <p>Prevent and control infectious chicken diseases</p>
         </div>
     </div>
-    <div class="more">
+    <div class="more" id="more">
         <h2>Find Out More About Us</h2>
+        <div class="more_group">
+            <div>
+                <img src="img/more1.jpg" alt="environment">
+                <h5>Our Chicken Environment</h5>
+            </div>
+            <div>
+                <img src="img/more2.jpg" alt="feeding">
+                <h5>Our Chicken Feeding</h5>
+            </div>
+            <div>
+                <img src="img/more3.jpeg" alt="hatching">
+                <h5>Our Chicken Hatching</h5>
+            </div>
+            <div>
+                <img src="img/more4.jpg" alt="transport">
+                <h5>Our Chicken Transport</h5>
+            </div>
+        </div>
     </div>
-    <div class="our_team">
+    <div class="our_team" id="our_team">
         <h2>Our Team</h2>
         <div class="team_group">
             <div class="team">
@@ -83,7 +109,7 @@
             </div>
         </div>
     </div>
-    <div class="follow_us">
+    <div class="follow_us" id="follow_us">
         <h2>Follow Us</h2>
         <div class="medsos_group">
             <img src="img/facebook.png" alt="facebook" class="medsos">
@@ -96,7 +122,7 @@
             <img src="img/youtube.png" alt="youtube" class="medsos">
         </div>
     </div>
-    <div class="content">
+    <div class="content" id="content">
         <div class="content_group">
             <h5>Company</h5><br>
             <p>Contact Us</p>
@@ -127,6 +153,7 @@
     <footer class="footer">
         <p>&copy; 2023 Chickeenz. All rights reserved.</p>
     </footer>
+    <script src="js/profile.js"></script>
 </body>
 
 </html>
