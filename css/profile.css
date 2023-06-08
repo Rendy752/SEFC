@@ -1,3 +1,128 @@
+body{
+    padding: 1rem 5rem 1rem 5rem;
+}
+
 .profile_nav{
-    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem 1rem 5rem;
+    background: linear-gradient(to right, red 0%, yellow 100%);
+}
+
+.logo{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+#mode{
+    width: 2rem;
+    height: 2rem;
+}
+
+.nav{
+    display: flex;
+    gap: 2rem;
+}
+
+.nav_item{
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 5px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.nav_item:hover{
+    background-color: lightblue;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.photo_banner{
+    padding: 1rem 2rem 1rem 2rem;
+    border: 2px solid black;
+}
+
+.banner{
+    width: 90%;
+    height: 40rem;
+    margin: auto;
+    display: none;
+    border: 1px solid red;
+    border-radius: 3px;
+}
+
+.about{
+    padding: 2rem 15rem 2rem 15rem;
+    border: 2px solid grey;
+}
+
+.about_group{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+#logo_about{
+    width: 20rem;
+    height: 20rem;
+}
+
+p, li{
+    font-size: 2rem;
+    margin: 0 4rem 0 4rem;
+}
+
+h2{
+    font-size: 3rem;
+    margin: 1rem 4rem 1rem 4rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.162);
+}
+
+.vision_mission{
+    border: 2px solid black;
+    padding: 1rem 5rem 1rem 5rem;
+}
+
+.vision_mission_group{
+    display: flex;
+    gap: 3rem;
+}
+
+.vision, .mission{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 50%;
+}
+
+.more{
+    padding: 1rem 5rem 1rem 5rem;
+    border: 2px solid grey;
+}
+
+.more_group, .team_group{
+    display: flex;
+    text-align: center;
+    gap: 3rem;
+}
+
+.more_picture, .team_picture{
+    width: 20rem;
+    height: 20rem;
+    border: 1px solid black;
+}
+
+.team{
+    border: 2px solid black;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.17);
+}
+
+.our_team{
+    padding: 1rem 5rem 1rem 5rem;
+    border: 2px solid black;
 }

@@ -14,7 +14,7 @@
     <header class="profile_nav">
         <img src="img/logo.png" alt="hm" class="logo">
         <div class="nav">
-            <button class="nav_item"><a onclick="set(1)"><img src="img/lightmode.png" id="mode"></a></button>
+            <button class="nav_item" onclick="set(1)"><img src="img/lightmode.png" id="mode"></button>
             <button class="nav_item"><a href="#photo_banner">Home</a></button>
             <button class="nav_item"><a href="#about">About</a></button>
             <button class="nav_item"><a href="#vision_mission">Vision Mission</a></button>
@@ -24,12 +24,7 @@
             <button class="nav_item"><a href="#content">Content</a></button>
         </div>
     </header>
-    <h2 id="tes"></h2>
-    <script>
-        document.getElementById("tes").innerText="Halo";
-    </script>
     <div class="photo_banner" id="photo_banner">
-        <h2>Photo Banner</h2>
         <img src="img/banner1.jpg" alt="banner" class="banner">
         <img src="img/banner2.jpg" alt="banner" class="banner">
         <img src="img/banner3.jpg" alt="banner" class="banner">
@@ -37,46 +32,55 @@
         <img src="img/banner5.jpg" alt="banner" class="banner">
     </div>
     <div class="about" id="about">
-        <h2>About the Company</h2>
-        <p>We're a startup company located at palembang which focuses on delivering chicken
-            seeds
-            through ulu to ilir.</p>
-        <p>We're true nature people who love chicken to raise and provide them best treatment
-            under their
-            natural habitat in order to maximize their quality.
-        </p>
+        <div class="about_group">
+            <img src="img/logo.png" alt="hm" class="logo" id="logo_about">
+            <div class="about_description">
+                <h2>About the Company</h2>
+                <p>We're a startup company located at palembang which focuses on delivering chicken
+                    seeds
+                    through ulu to ilir.</p>
+                <p>We're true nature people who love chicken to raise and provide them best treatment
+                    under their
+                    natural habitat in order to maximize their quality.
+                </p>
+            </div>
+        </div>
     </div>
     <div class="vision_mission" id="vision_mission">
+        <div class="vision_mission_group">
         <div class="vision">
-            <h2>Vision</h2>
+            <h2>Our Vision</h2>
             <p>Our vision is to make our company the best chicken farming company in Palembang by providing good sevice
                 for our customer</p>
         </div>
         <div class="mission">
-            <h2>Mission</h2>
-            <p>Provide high quality chicks</p>
-            <p>Provide safe and timely delivery</p>
-            <p>Prevent and control infectious chicken diseases</p>
+            <h2>Our Mission</h2>
+            <ol>
+            <li><p>Provide high quality chicks</p></li>
+            <li><p>Provide safe and timely delivery</p></li>
+            <li><p>Prevent and control infectious chicken diseases</p></li>
+            </ol>
+        </div>
         </div>
     </div>
     <div class="more" id="more">
         <h2>Find Out More About Us</h2>
         <div class="more_group">
             <div>
-                <img src="img/more1.jpg" alt="environment">
-                <h5>Our Chicken Environment</h5>
+                <img src="img/more1.jpg" alt="environment" class="more_picture">
+                <p>Our Chicken Environment</p>
             </div>
             <div>
-                <img src="img/more2.jpg" alt="feeding">
-                <h5>Our Chicken Feeding</h5>
+                <img src="img/more2.jpg" alt="feeding" class="more_picture">
+                <p>Our Chicken Feeding</p>
             </div>
             <div>
-                <img src="img/more3.jpeg" alt="hatching">
-                <h5>Our Chicken Hatching</h5>
+                <img src="img/more3.jpeg" alt="hatching" class="more_picture">
+                <p>Our Chicken Hatching</p>
             </div>
             <div>
-                <img src="img/more4.jpg" alt="transport">
-                <h5>Our Chicken Transport</h5>
+                <img src="img/more4.jpg" alt="transport" class="more_picture">
+                <p>Our Chicken Transport</p>
             </div>
         </div>
     </div>
